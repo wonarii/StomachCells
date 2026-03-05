@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i =0; i < food.Count; i++)
         {
-            food[i].bigFood.takeDamage(hydrochloricAcidCount);
+            food[i].GetComponent<food_small>().takeDamage(hydrochloricAcidCount);
         }
          yield return new WaitForSeconds(digestionTime);
         StartCoroutine(digest());

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2753835776314128866}
   - component: {fileID: 8601290021439934344}
+  - component: {fileID: -1071461084430633285}
   m_Layer: 0
   m_Name: Food_Small
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 839223253063268584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9024, y: 5.1725, z: 0}
+  m_LocalPosition: {x: -4.9024, y: 5.1725, z: 1}
   m_LocalScale: {x: 0.10520496, y: 0.10520496, z: 0.10520496}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8054587392333556265, guid: a5c3b27855d394128a6dfdc5193bb5d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,3 +92,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-1071461084430633285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839223253063268584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00aa4522880f240dba630255c7bbdb46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::foodMovement
+  foodSpeedY: 0.001
+  minSpeedX: 0
+  maxSpeedX: 0

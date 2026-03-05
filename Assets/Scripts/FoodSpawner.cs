@@ -33,36 +33,36 @@ public class FoodSpawner : MonoBehaviour
         
         //choose what size food to spawn
         //CURRENTLY SET TO ONLY SMALL FOODS
-        int foodSize = UnityEngine.Random.Range(10,10);
+        // int foodSize = UnityEngine.Random.Range(10,11);
 
-        GameObject currentFood;
+         // GameObject currentFood;
 
-        switch (foodSize)
-        {
-            case 1:
-                {
-                    currentFood = Instantiate(bigFoodPrefab, foodPosition, transform.rotation);
-                    break;
-                }
-            case 2:
-                {
-                   currentFood = Instantiate(mediumFoodPrefab, foodPosition, transform.rotation);
-                    break;
-                }
-            case 3:
-                {
-                    currentFood = Instantiate(mediumFoodPrefab, foodPosition, transform.rotation);
-                    break;
-                }
-            default:
-                {
-                   currentFood = Instantiate(smallFoodPrefab, foodPosition, transform.rotation);
-                    break; 
-                }
-        }
-
+        // switch (foodSize)
+        // {
+        //     case 1:
+        //         {
+        //             currentFood = Instantiate(bigFoodPrefab, foodPosition, transform.rotation);
+        //             break;
+        //         }
+        //     case 2:
+        //         {
+        //            currentFood = Instantiate(mediumFoodPrefab, foodPosition, transform.rotation);
+        //             break;
+        //         }
+        //     case 3:
+        //         {
+        //             currentFood = Instantiate(mediumFoodPrefab, foodPosition, transform.rotation);
+        //             break;
+        //         }
+        //     default:
+        //         {
+                   GameObject currentFood = Instantiate(smallFoodPrefab, foodPosition, transform.rotation);
+        //           break; 
+        //         }
+        // }
+  
         //add the food to the game manager's array
-        GameManager.GM.addFood(currentFood);
+        //GameManager.GM.addFood(currentFood);
 
         timeUntilNextSpawn = Random.Range(minTimeUntilNextSpawn,maxTimeUntilNextSpawn);
 
