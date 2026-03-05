@@ -32,7 +32,8 @@ public class FoodSpawner : MonoBehaviour
         Vector3 foodPosition = new Vector3(x, y, 0);
         
         //choose what size food to spawn
-        int foodSize = UnityEngine.Random.Range(1,8);
+        //CURRENTLY SET TO ONLY SMALL FOODS
+        int foodSize = UnityEngine.Random.Range(10,10);
 
         GameObject currentFood;
 

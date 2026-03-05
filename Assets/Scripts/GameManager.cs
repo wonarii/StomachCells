@@ -63,4 +63,11 @@ public class GameManager : MonoBehaviour
     {
         food.Remove(foodToRemove);
     }
+
+
+    ///add hydrochloric acid
+    public void addHydrochloricAcid()
+    {
+        hydrochloricAcidCount ++;
+    }
 }
